@@ -1,0 +1,3 @@
+Create database by the name of blog..
+create table users with ID ,Name ,Lastname ,Fname..
+
