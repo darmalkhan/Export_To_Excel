@@ -18,6 +18,7 @@
    <h3 align="center">Export Data to Excel in Laravel 8</h3><br />
    <div align="center">
     <a href="{{ url('/Export') }}" class="btn btn-success">Export to Excel</a>
+    <a id="excel" class="btn btn-success">Export to Excel dwa</a>
    </div>
    <br />
    <div class="table-responsive">
@@ -38,5 +39,18 @@
    </div>
    
   </div>
+  <script>
+ $('#excel').on('click',function(){
+$.ajax({
+     type : 'GET',
+     url : '/Export',
+     success:function(data){
+        //  console.log("success", data)
+    window.location.href = '/Export';
+     }
+});
+})
+
+</script>
  </body>
 </html> 
