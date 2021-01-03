@@ -8,6 +8,7 @@ use Illuminate\Http\Request;
 
 use DB;
 use Excel;
+use PDF;
 
 class export_excel extends Controller
 {
@@ -16,6 +17,8 @@ class export_excel extends Controller
      function excel(){
 
      $data = DB::table('users')->get();
+
      return view('export')->with('data', $data);
     }
+
 }

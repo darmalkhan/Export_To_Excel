@@ -17,8 +17,9 @@
   <div class="container"> 
    <h3 align="center">Export Data to Excel in Laravel 8</h3><br />
    <div align="center">
+    <a class="btn btn-primary" href="{{ URL::to('/ExportPdf') }}">Export to PDF</a>
     <a href="{{ url('/Export') }}" class="btn btn-success">Export to Excel</a>
-    <a id="excel" class="btn btn-success">Export to Excel dwa</a>
+    <a id="excel" class="btn btn-danger">Export to Excel by AJAX</a>
    </div>
    <br />
    <div class="table-responsive">

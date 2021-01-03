@@ -30,3 +30,8 @@ Route::get('export',[export_excel::class,'excel']);
 Route::get('/Export', function () {
         return Excel::download(new UsersExport(), 'users.xlsx');
 });
+
+
+Route::get('/ExportPdf', function () {
+        return Excel::download(new UsersExport(), 'users.pdf');
+});
